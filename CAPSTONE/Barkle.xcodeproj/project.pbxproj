@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF3D39122904644A004A576D /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3D39112904644A004A576D /* FavoritesController.swift */; };
 		FF656B3E28F334A80062F30D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF656B3D28F334A80062F30D /* AccountViewController.swift */; };
 		FFEB41CE28CD16970075780C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB41CD28CD16970075780C /* AppDelegate.swift */; };
 		FFEB41D028CD16970075780C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB41CF28CD16970075780C /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF3D39112904644A004A576D /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		FF656B3D28F334A80062F30D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		FFEB41CA28CD16970075780C /* Barkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB41CD28CD16970075780C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				FFEB41CF28CD16970075780C /* SceneDelegate.swift */,
 				FFEB41D128CD16970075780C /* ViewController.swift */,
 				FFEB41D328CD16970075780C /* Main.storyboard */,
+				FF3D39112904644A004A576D /* FavoritesController.swift */,
 				FF656B3D28F334A80062F30D /* AccountViewController.swift */,
 				FFEB41D628CD169B0075780C /* Assets.xcassets */,
 				FFEB41D828CD169B0075780C /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				FFEB41D228CD16970075780C /* ViewController.swift in Sources */,
 				FFEB41CE28CD16970075780C /* AppDelegate.swift in Sources */,
+				FF3D39122904644A004A576D /* FavoritesController.swift in Sources */,
 				FF656B3E28F334A80062F30D /* AccountViewController.swift in Sources */,
 				FFEB41D028CD16970075780C /* SceneDelegate.swift in Sources */,
 			);

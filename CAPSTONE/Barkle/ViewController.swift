@@ -35,5 +35,8 @@ class ViewController: UIViewController {
         animalPicOne.image = animalPicSetTwo.randomElement()
         xPic -= 1
     }
+    @IBAction func favoritePressed(_ sender: Any) {
+    }
+    
 }
 
