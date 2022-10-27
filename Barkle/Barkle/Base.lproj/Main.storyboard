@@ -17,17 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Barkle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-Cl-ETW">
-                                <rect key="frame" x="130" y="44" width="113" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
-                                <color key="textColor" red="0.23921568627450979" green="0.23529411764705882" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zhU-3Z-tav">
-                                <rect key="frame" x="251" y="52" width="33" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJj-gg-I8D">
                                 <rect key="frame" x="20" y="679" width="127" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,9 +30,11 @@
                                     <action selector="xPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KND-GT-san"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="XQk-Vf-I9P">
-                                <rect key="frame" x="0.0" y="156" width="414" height="515"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="XQk-Vf-I9P">
+                                <rect key="frame" x="0.0" y="156.5" width="414" height="515"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XQk-Vf-I9P" secondAttribute="height" multiplier="414:515" id="u4f-Yj-lVN"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-O0-Wxd">
                                 <rect key="frame" x="267" y="679" width="127" height="95"/>
@@ -58,9 +49,26 @@
                                     <action selector="checkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndl-9n-Vsf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barkle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-Cl-ETW">
+                                <rect key="frame" x="150" y="48" width="114" height="53.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EJx-Cl-ETW" secondAttribute="height" multiplier="121:57" id="rBw-w5-dFp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                <color key="textColor" red="0.23921568627450979" green="0.23529411764705882" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.81960784313725488" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EJx-Cl-ETW" secondAttribute="trailing" constant="150" id="7Qs-0Y-aWA"/>
+                            <constraint firstItem="EJx-Cl-ETW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BxL-oL-iOk"/>
+                            <constraint firstItem="XQk-Vf-I9P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zgs-6N-B8G"/>
+                            <constraint firstItem="XQk-Vf-I9P" firstAttribute="top" secondItem="EJx-Cl-ETW" secondAttribute="bottom" constant="55" id="htj-1d-PoD"/>
+                            <constraint firstItem="EJx-Cl-ETW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="nnU-jK-pYZ"/>
+                            <constraint firstItem="XQk-Vf-I9P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="waU-AK-TbV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="animalPicOne" destination="XQk-Vf-I9P" id="VTL-Nc-M9V"/>

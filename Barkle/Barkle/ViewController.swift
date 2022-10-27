@@ -35,11 +35,11 @@ class ViewController: UIViewController {
         animalPicOne.image = animalPicSetTwo.randomElement()
         xPic -= 1
     }
-    
+    //The below keeps the screen orientated in portrait mode permanently.
     override var shouldAutorotate: Bool {
         return false
     }
-    
+    //as above
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
         return .portrait
     }
