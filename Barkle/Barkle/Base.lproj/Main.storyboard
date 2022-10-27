@@ -17,10 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJj-gg-I8D">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJj-gg-I8D">
                                 <rect key="frame" x="20" y="679" width="127" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="JRa-VU-N1K"/>
+                                    <constraint firstAttribute="width" constant="127" id="oc7-ud-oMF"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="❌">
@@ -31,15 +34,19 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="XQk-Vf-I9P">
-                                <rect key="frame" x="0.0" y="156.5" width="414" height="515"/>
+                                <rect key="frame" x="0.0" y="156" width="414" height="515"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XQk-Vf-I9P" secondAttribute="height" multiplier="414:515" id="u4f-Yj-lVN"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-O0-Wxd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-O0-Wxd">
                                 <rect key="frame" x="267" y="679" width="127" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Bhj-O0-Wxd" secondAttribute="height" multiplier="127:95" id="Laq-f6-Djq"/>
+                                    <constraint firstAttribute="width" constant="127" id="pPn-tK-BCF"/>
+                                    <constraint firstAttribute="height" constant="95" id="x5y-bX-xSK"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="✔️">
@@ -49,11 +56,8 @@
                                     <action selector="checkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndl-9n-Vsf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barkle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-Cl-ETW">
-                                <rect key="frame" x="150" y="48" width="114" height="53.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="EJx-Cl-ETW" secondAttribute="height" multiplier="121:57" id="rBw-w5-dFp"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Barkle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-Cl-ETW">
+                                <rect key="frame" x="151" y="44" width="121" height="57"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
                                 <color key="textColor" red="0.23921568627450979" green="0.23529411764705882" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -62,11 +66,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.65098039215686276" green="0.81960784313725488" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EJx-Cl-ETW" secondAttribute="trailing" constant="150" id="7Qs-0Y-aWA"/>
-                            <constraint firstItem="EJx-Cl-ETW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BxL-oL-iOk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bhj-O0-Wxd" secondAttribute="trailing" constant="20" id="5YF-wR-RLP"/>
+                            <constraint firstItem="Bhj-O0-Wxd" firstAttribute="top" secondItem="XQk-Vf-I9P" secondAttribute="bottom" constant="8" symbolic="YES" id="80I-SM-ytp"/>
+                            <constraint firstItem="Bhj-O0-Wxd" firstAttribute="leading" secondItem="nJj-gg-I8D" secondAttribute="trailing" constant="120" id="LL3-pK-Uhr"/>
+                            <constraint firstItem="nJj-gg-I8D" firstAttribute="top" secondItem="XQk-Vf-I9P" secondAttribute="bottom" constant="8" symbolic="YES" id="Nj8-ee-XtL"/>
                             <constraint firstItem="XQk-Vf-I9P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zgs-6N-B8G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bhj-O0-Wxd" secondAttribute="bottom" constant="88" id="eb8-NA-gS0"/>
                             <constraint firstItem="XQk-Vf-I9P" firstAttribute="top" secondItem="EJx-Cl-ETW" secondAttribute="bottom" constant="55" id="htj-1d-PoD"/>
-                            <constraint firstItem="EJx-Cl-ETW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="nnU-jK-pYZ"/>
+                            <constraint firstItem="Bhj-O0-Wxd" firstAttribute="leading" secondItem="nJj-gg-I8D" secondAttribute="trailing" constant="120" id="ifB-MU-OJK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nJj-gg-I8D" secondAttribute="bottom" constant="88" id="j1S-0N-JRn"/>
+                            <constraint firstItem="nJj-gg-I8D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m4I-al-ZWe"/>
                             <constraint firstItem="XQk-Vf-I9P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="waU-AK-TbV"/>
                         </constraints>
                     </view>
