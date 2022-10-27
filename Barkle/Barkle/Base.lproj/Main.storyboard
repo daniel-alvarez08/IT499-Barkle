@@ -56,8 +56,8 @@
                                     <action selector="checkPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndl-9n-Vsf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Barkle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-Cl-ETW">
-                                <rect key="frame" x="151" y="44" width="121" height="57"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barkle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-Cl-ETW">
+                                <rect key="frame" x="151" y="44" width="112.5" height="57"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
                                 <color key="textColor" red="0.23921568627450979" green="0.23529411764705882" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -75,6 +75,7 @@
                             <constraint firstItem="XQk-Vf-I9P" firstAttribute="top" secondItem="EJx-Cl-ETW" secondAttribute="bottom" constant="55" id="htj-1d-PoD"/>
                             <constraint firstItem="Bhj-O0-Wxd" firstAttribute="leading" secondItem="nJj-gg-I8D" secondAttribute="trailing" constant="120" id="ifB-MU-OJK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nJj-gg-I8D" secondAttribute="bottom" constant="88" id="j1S-0N-JRn"/>
+                            <constraint firstItem="EJx-Cl-ETW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kd9-Vu-UgC"/>
                             <constraint firstItem="nJj-gg-I8D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="m4I-al-ZWe"/>
                             <constraint firstItem="XQk-Vf-I9P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="waU-AK-TbV"/>
                         </constraints>
