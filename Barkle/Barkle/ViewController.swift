@@ -35,5 +35,13 @@ class ViewController: UIViewController {
         animalPicOne.image = animalPicSetTwo.randomElement()
         xPic -= 1
     }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return .portrait
+    }
 }
 
