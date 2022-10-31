@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CB0E94E291030BC00C0AE5F /* nobark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CB0E94C291030BC00C0AE5F /* nobark.wav */; };
+		9CB0E94F291030BC00C0AE5F /* yesbark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CB0E94D291030BC00C0AE5F /* yesbark.wav */; };
 		FFEB41CE28CD16970075780C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB41CD28CD16970075780C /* AppDelegate.swift */; };
 		FFEB41D028CD16970075780C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB41CF28CD16970075780C /* SceneDelegate.swift */; };
 		FFEB41D228CD16970075780C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB41D128CD16970075780C /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CB0E94C291030BC00C0AE5F /* nobark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nobark.wav; sourceTree = "<group>"; };
+		9CB0E94D291030BC00C0AE5F /* yesbark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yesbark.wav; sourceTree = "<group>"; };
 		FFEB41CA28CD16970075780C /* Barkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEB41CD28CD16970075780C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFEB41CF28CD16970075780C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CB0E94B291030BC00C0AE5F /* app sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9CB0E94C291030BC00C0AE5F /* nobark.wav */,
+				9CB0E94D291030BC00C0AE5F /* yesbark.wav */,
+			);
+			path = "app sounds";
+			sourceTree = "<group>";
+		};
 		FFEB41C128CD16960075780C = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +76,7 @@
 				FFEB41D628CD169B0075780C /* Assets.xcassets */,
 				FFEB41D828CD169B0075780C /* LaunchScreen.storyboard */,
 				FFEB41DB28CD169B0075780C /* Info.plist */,
+				9CB0E94B291030BC00C0AE5F /* app sounds */,
 			);
 			path = Barkle;
 			sourceTree = "<group>";
@@ -126,8 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEB41DA28CD169B0075780C /* LaunchScreen.storyboard in Resources */,
+				9CB0E94F291030BC00C0AE5F /* yesbark.wav in Resources */,
 				FFEB41D728CD169B0075780C /* Assets.xcassets in Resources */,
 				FFEB41D528CD16970075780C /* Main.storyboard in Resources */,
+				9CB0E94E291030BC00C0AE5F /* nobark.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
