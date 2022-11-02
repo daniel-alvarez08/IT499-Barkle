@@ -38,5 +38,14 @@ class ViewController: UIViewController {
     @IBAction func favoritePressed(_ sender: Any) {
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let dogs = JsonLoader.getDogs()
+        guard let firstDog = dogs.first else { return }
+        print(firstDog.Title)
+        print(firstDog.animaldetailitem)
+    }
+    
 }
+
 
