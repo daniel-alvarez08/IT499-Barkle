@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9C0AB8592912D0D1007AF488 /* longDogData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C0AB8582912D0D1007AF488 /* longDogData.json */; };
 		9C0AB85B2912D1B6007AF488 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0AB85A2912D1B6007AF488 /* Dog.swift */; };
+		9C0AB86429141EC3007AF488 /* nobark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C0AB86229141EC3007AF488 /* nobark.wav */; };
+		9C0AB86529141EC3007AF488 /* yesbark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C0AB86329141EC3007AF488 /* yesbark.wav */; };
+		9C36736B2914271200469C9E /* dnldImgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36736A2914271200469C9E /* dnldImgs.swift */; };
 		FF3D39122904644A004A576D /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3D39112904644A004A576D /* FavoritesController.swift */; };
 		FF656B3E28F334A80062F30D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF656B3D28F334A80062F30D /* AccountViewController.swift */; };
 		FFEB41CE28CD16970075780C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB41CD28CD16970075780C /* AppDelegate.swift */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		9C0AB8582912D0D1007AF488 /* longDogData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = longDogData.json; sourceTree = "<group>"; };
 		9C0AB85A2912D1B6007AF488 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		9C0AB86229141EC3007AF488 /* nobark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nobark.wav; path = "Barkle/app sounds/nobark.wav"; sourceTree = "<group>"; };
+		9C0AB86329141EC3007AF488 /* yesbark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yesbark.wav; path = "Barkle/app sounds/yesbark.wav"; sourceTree = "<group>"; };
+		9C36736A2914271200469C9E /* dnldImgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dnldImgs.swift; sourceTree = "<group>"; };
 		FF3D39112904644A004A576D /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		FF656B3D28F334A80062F30D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		FFEB41CA28CD16970075780C /* Barkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +54,8 @@
 		FFEB41C128CD16960075780C = {
 			isa = PBXGroup;
 			children = (
+				9C0AB86229141EC3007AF488 /* nobark.wav */,
+				9C0AB86329141EC3007AF488 /* yesbark.wav */,
 				FFEB41CC28CD16970075780C /* Barkle */,
 				FFEB41CB28CD16970075780C /* Products */,
 			);
@@ -75,6 +83,7 @@
 				FFEB41D828CD169B0075780C /* LaunchScreen.storyboard */,
 				FFEB41DB28CD169B0075780C /* Info.plist */,
 				9C0AB85A2912D1B6007AF488 /* Dog.swift */,
+				9C36736A2914271200469C9E /* dnldImgs.swift */,
 			);
 			path = Barkle;
 			sourceTree = "<group>";
@@ -137,6 +146,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0AB86429141EC3007AF488 /* nobark.wav in Resources */,
+				9C0AB86529141EC3007AF488 /* yesbark.wav in Resources */,
 				9C0AB8592912D0D1007AF488 /* longDogData.json in Resources */,
 				FFEB41DA28CD169B0075780C /* LaunchScreen.storyboard in Resources */,
 				FFEB41D728CD169B0075780C /* Assets.xcassets in Resources */,
@@ -157,6 +168,7 @@
 				FF3D39122904644A004A576D /* FavoritesController.swift in Sources */,
 				FF656B3E28F334A80062F30D /* AccountViewController.swift in Sources */,
 				FFEB41D028CD16970075780C /* SceneDelegate.swift in Sources */,
+				9C36736B2914271200469C9E /* dnldImgs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +331,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.IT499-Daniel-Roxy.Barkle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -348,6 +363,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.IT499-Daniel-Roxy.Barkle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
