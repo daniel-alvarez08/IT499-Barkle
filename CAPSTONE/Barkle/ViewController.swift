@@ -18,6 +18,14 @@ class ViewController: UIViewController {
     //references UI element (main image)
     @IBOutlet weak var animalPicOne: UIImageView!
     
+    @IBOutlet weak var dogName: UILabel!
+    @IBOutlet weak var dogID: UILabel!
+    @IBOutlet weak var dogStatus: UILabel!
+    @IBOutlet weak var dogBreed: UILabel!
+    @IBOutlet weak var dogSex: UILabel!
+    @IBOutlet weak var dogAge: UILabel!
+    @IBOutlet weak var dogLocation: UILabel!
+    
     @IBOutlet weak var loadingWidget: UIActivityIndicatorView!
     
     var checkPic = 0
@@ -30,10 +38,27 @@ class ViewController: UIViewController {
         
         dogIndex += 1
         animalPicOne.image = nil
+        
         let currentDog = dogs[dogIndex]
         
         // creates task to allow calling async
         Task{
+            dogName.isHidden = false
+            dogID.isHidden = false
+            dogStatus.isHidden = false
+            dogBreed.isHidden = false
+            dogSex.isHidden = false
+            dogAge.isHidden = false
+            dogLocation.isHidden = false
+            
+            dogName.text = currentDog.Title
+            dogID.text = currentDog.Number
+            dogStatus.text = currentDog.animaldetailitem
+            dogBreed.text = currentDog.animaldetailitem1
+            dogSex.text = currentDog.animaldetailitem2
+            dogAge.text = currentDog.animaldetailitem3
+            dogLocation.text = currentDog.animaldetailitem4
+            
             // getting image async
             let image = try await ImageDownloader.getImage(urlString: currentDog.Image)
             // showing image on main thread
@@ -114,6 +139,13 @@ class ViewController: UIViewController {
         print(firstDog.Title)
         print(firstDog.animaldetailitem)
         
+        dogName.isHidden = true
+        dogID.isHidden = true
+        dogStatus.isHidden = true
+        dogBreed.isHidden = true
+        dogSex.isHidden = true
+        dogAge.isHidden = true
+        dogLocation.isHidden = true
 
     }
     
