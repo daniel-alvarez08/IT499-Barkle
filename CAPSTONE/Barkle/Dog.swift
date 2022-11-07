@@ -7,6 +7,7 @@
 
 import Foundation
 
+// initializes fields from json file
 struct Dog:Codable{
     let Title:String
     let Image:String

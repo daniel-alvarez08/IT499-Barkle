@@ -73,16 +73,26 @@ class ViewController: UIViewController {
     // when check is pressed, next picture is shown.
     @IBAction func checkPressed(_ sender: UIButton) {
         
+        var vdogName: String = ""
+        var vdogID: String = ""
+        var vdogStatus: String = ""
+        var vdogBreed: String = ""
+        var vdogSex: String = ""
+        var vdogAge: String = ""
+        var vdogLocation: String = ""
+        
+        vdogName = dogName.text ?? ""
+        vdogID = dogID.text ?? ""
+        vdogStatus = dogStatus.text ?? ""
+        vdogBreed = dogBreed.text ?? ""
+        vdogSex = dogSex.text ?? ""
+        vdogAge = dogAge.text ?? ""
+        vdogLocation = dogLocation.text ?? ""
+        
+        print("xxxxxxxxxx")
+        print(vdogName)
+        
         showNextDog()
-        
-        /*
-        // Var allows us to change images of animals at a later time.
-        var animalPicSetOne = [#imageLiteral(resourceName: "Umbreon"), #imageLiteral(resourceName: "umbreon2"), #imageLiteral(resourceName: "umbreon3")]
-        
-        // Array of images of animals        shows random images from within Array
-        animalPicOne.image = animalPicSetOne.randomElement()
-        checkPic += 1
-        */
         
         // Attaches "yesbark" audio file to button
         guard let pathToSound = Bundle.main.path(forResource: "yesbark", ofType: "wav")
