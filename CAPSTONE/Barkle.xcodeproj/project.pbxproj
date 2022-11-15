@@ -12,6 +12,8 @@
 		9C0AB86429141EC3007AF488 /* nobark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C0AB86229141EC3007AF488 /* nobark.wav */; };
 		9C0AB86529141EC3007AF488 /* yesbark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C0AB86329141EC3007AF488 /* yesbark.wav */; };
 		9C36736B2914271200469C9E /* dnldImgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36736A2914271200469C9E /* dnldImgs.swift */; };
+		9CC082C129244F570059F82A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC082C029244F560059F82A /* ListViewController.swift */; };
+		9CC082C3292450700059F82A /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC082C2292450700059F82A /* SwiftUIListView.swift */; };
 		FF3D39122904644A004A576D /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3D39112904644A004A576D /* FavoritesController.swift */; };
 		FF656B3E28F334A80062F30D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF656B3D28F334A80062F30D /* AccountViewController.swift */; };
 		FFEB41CE28CD16970075780C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEB41CD28CD16970075780C /* AppDelegate.swift */; };
@@ -28,6 +30,8 @@
 		9C0AB86229141EC3007AF488 /* nobark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nobark.wav; path = "Barkle/app sounds/nobark.wav"; sourceTree = "<group>"; };
 		9C0AB86329141EC3007AF488 /* yesbark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yesbark.wav; path = "Barkle/app sounds/yesbark.wav"; sourceTree = "<group>"; };
 		9C36736A2914271200469C9E /* dnldImgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dnldImgs.swift; sourceTree = "<group>"; };
+		9CC082C029244F560059F82A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9CC082C2292450700059F82A /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListView.swift; sourceTree = "<group>"; };
 		FF3D39112904644A004A576D /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		FF656B3D28F334A80062F30D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		FFEB41CA28CD16970075780C /* Barkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,8 @@
 				FFEB41DB28CD169B0075780C /* Info.plist */,
 				9C0AB85A2912D1B6007AF488 /* Dog.swift */,
 				9C36736A2914271200469C9E /* dnldImgs.swift */,
+				9CC082C029244F560059F82A /* ListViewController.swift */,
+				9CC082C2292450700059F82A /* SwiftUIListView.swift */,
 			);
 			path = Barkle;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 				FF3D39122904644A004A576D /* FavoritesController.swift in Sources */,
 				FF656B3E28F334A80062F30D /* AccountViewController.swift in Sources */,
 				FFEB41D028CD16970075780C /* SceneDelegate.swift in Sources */,
+				9CC082C129244F570059F82A /* ListViewController.swift in Sources */,
+				9CC082C3292450700059F82A /* SwiftUIListView.swift in Sources */,
 				9C36736B2914271200469C9E /* dnldImgs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
