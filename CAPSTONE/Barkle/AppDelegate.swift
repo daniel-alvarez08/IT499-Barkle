@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,3 +35,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+struct BarkleApp: App {
+    let persistenceController = PersistenceController.shared
+    @Environment(\.scenePhase) var scenePhase
+    var body: some Scene {
+        WindowGroup {
+            SwiftUIListView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+
+        }
+                .onChange(of: scenePhase) { _ in
+                        persistenceController.save()
+        }
+    }
+
+}

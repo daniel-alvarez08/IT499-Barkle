@@ -12,6 +12,8 @@
 		9C0AB86429141EC3007AF488 /* nobark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C0AB86229141EC3007AF488 /* nobark.wav */; };
 		9C0AB86529141EC3007AF488 /* yesbark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C0AB86329141EC3007AF488 /* yesbark.wav */; };
 		9C36736B2914271200469C9E /* dnldImgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36736A2914271200469C9E /* dnldImgs.swift */; };
+		9C9AA87E29254F9C0069264A /* BarkleDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C9AA87C29254F9C0069264A /* BarkleDB.xcdatamodeld */; };
+		9C9AA880292550C10069264A /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9AA87F292550C10069264A /* PersistenceController.swift */; };
 		9CC082C129244F570059F82A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC082C029244F560059F82A /* ListViewController.swift */; };
 		9CC082C3292450700059F82A /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC082C2292450700059F82A /* SwiftUIListView.swift */; };
 		FF3D39122904644A004A576D /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3D39112904644A004A576D /* FavoritesController.swift */; };
@@ -30,6 +32,8 @@
 		9C0AB86229141EC3007AF488 /* nobark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nobark.wav; path = "Barkle/app sounds/nobark.wav"; sourceTree = "<group>"; };
 		9C0AB86329141EC3007AF488 /* yesbark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = yesbark.wav; path = "Barkle/app sounds/yesbark.wav"; sourceTree = "<group>"; };
 		9C36736A2914271200469C9E /* dnldImgs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dnldImgs.swift; sourceTree = "<group>"; };
+		9C9AA87D29254F9C0069264A /* BarkleDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BarkleDB.xcdatamodel; sourceTree = "<group>"; };
+		9C9AA87F292550C10069264A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		9CC082C029244F560059F82A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		9CC082C2292450700059F82A /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListView.swift; sourceTree = "<group>"; };
 		FF3D39112904644A004A576D /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				9C36736A2914271200469C9E /* dnldImgs.swift */,
 				9CC082C029244F560059F82A /* ListViewController.swift */,
 				9CC082C2292450700059F82A /* SwiftUIListView.swift */,
+				9C9AA87C29254F9C0069264A /* BarkleDB.xcdatamodeld */,
+				9C9AA87F292550C10069264A /* PersistenceController.swift */,
 			);
 			path = Barkle;
 			sourceTree = "<group>";
@@ -168,9 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9AA87E29254F9C0069264A /* BarkleDB.xcdatamodeld in Sources */,
 				FFEB41D228CD16970075780C /* ViewController.swift in Sources */,
 				FFEB41CE28CD16970075780C /* AppDelegate.swift in Sources */,
 				9C0AB85B2912D1B6007AF488 /* Dog.swift in Sources */,
+				9C9AA880292550C10069264A /* PersistenceController.swift in Sources */,
 				FF3D39122904644A004A576D /* FavoritesController.swift in Sources */,
 				FF656B3E28F334A80062F30D /* AccountViewController.swift in Sources */,
 				FFEB41D028CD16970075780C /* SceneDelegate.swift in Sources */,
@@ -331,7 +339,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,7 +371,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +410,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9C9AA87C29254F9C0069264A /* BarkleDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C9AA87D29254F9C0069264A /* BarkleDB.xcdatamodel */,
+			);
+			currentVersion = 9C9AA87D29254F9C0069264A /* BarkleDB.xcdatamodel */;
+			path = BarkleDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FFEB41C228CD16960075780C /* Project object */;
 }

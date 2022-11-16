@@ -8,25 +8,43 @@
 import SwiftUI
 
 struct SwiftUIListView: View {
+    @Environment(\.managedObjectContext) var managedObjectContext
+    let persistenceController = PersistenceController.shared
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.name)]) var barkleDB: FetchedResults<DogList>
+    
     var body: some View {
-        VStack(alignment: .leading) {
-                    Text("Turtle Rock")
-                        .font(.title)
-                    Image("kaneki")
-                        .clipShape(Circle())
-                    HStack {
-                        Text("Joshua Tree National Park")
-                            .font(.subheadline)
-                        Spacer()
-                        Text("California")
-                            .font(.subheadline)
+        VStack {
+            Spacer()
+            Spacer()
+            Spacer()
+            Button("Click This to Add a Dog") {
+                let db = DogList(context: managedObjectContext)
+                db.name = "Conan"
+            }
+            Text("This Starts the List")
+            List(barkleDB) { listdogs in
+                Text(listdogs.name ?? "unknown")
+                
+            }
+            Text("This Ends the List")
+                    
                     }
                 }
-                .padding()    }
-}
+    func save() {
+        let context = container.viewContext
 
-struct SwiftUIListView_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftUIListView()
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                print("xxxxxxxxxxx it didnt save")
+            }
+        }
     }
 }
+
+//struct SwiftUIListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SwiftUIListView()
+//    }
+//}
