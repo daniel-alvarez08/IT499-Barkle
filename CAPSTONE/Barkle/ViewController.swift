@@ -9,10 +9,17 @@ import UIKit
 import AVFoundation
 import SwiftUI
 
+struct ddogz {
+    static var arrdogs:[Dog] = []
+    
+    
+}
+
 class ViewController: UIViewController {
     
     var dogs:[Dog] = []
     var dogIndex = -1
+    //let currentDog = dogs[dogIndex]
     
     var audioPlayer: AVAudioPlayer?
     
@@ -41,6 +48,8 @@ class ViewController: UIViewController {
         animalPicOne.image = nil
         
         let currentDog = dogs[dogIndex]
+        //dIndex.ar = currentDog
+        ddogz.arrdogs = currentDog
         
         // creates task to allow calling async
         Task{

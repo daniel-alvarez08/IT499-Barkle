@@ -2,7 +2,7 @@
 //  Dog.swift
 //  Barkle
 //
-//  Created by Foxy Roxy on 11/2/22.
+//  Created by FRoxy P on 11/2/22.
 //
 
 import Foundation

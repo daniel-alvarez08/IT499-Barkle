@@ -2,7 +2,7 @@
 //  ListViewController.swift
 //  Barkle
 //
-//  Created by Foxy Roxy on 11/15/22.
+//  Created by Roxanna P on 11/15/22.
 //
 
 import UIKit
@@ -14,8 +14,8 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let childview = UIHostingController(rootView: SwiftUIListView())
+        let persistenceController = PersistenceController.shared
+        let childview = UIHostingController(rootView: SwiftUIListView().environment(\.managedObjectContext, persistenceController.container.viewContext))
         addChild(childview)
         childview.view.frame = theContainer.bounds
         theContainer.addSubview(childview.view)
