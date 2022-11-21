@@ -2,8 +2,6 @@
 //  SwiftUIListView.swift
 //  Barkle
 //
-//  Created by Roxanna P on 11/15/22.
-//
 
 import SwiftUI
 
@@ -17,16 +15,16 @@ struct SwiftUIListView: View {
     
     var body: some View {
         //var cDog = vc.dogs.count
-        let currentDog = dogs[dIndex.index]
+        //let currentDog = dogs[dIndex.index]
         VStack {
             //var currentDog = dogs[vc.dogIndex]
             
             Text("\(barkleDB.count)")
-            Text("\(dIndex.index)")
-            Text("\(currentDog.Title)")
+            //Text("\(dIndex.index)")
+            //Text("\(currentDog.Title)")
             Button("Click This to Add a Dog") {
                 let db = DogList(context: moc)
-                db.name = currentDog.Title
+               // db.name = currentDog.Title
                 PersistenceController.shared.save()
             }
             Text("This Starts the List")

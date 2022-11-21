@@ -2,8 +2,6 @@
 //  SceneDelegate.swift
 //  Barkle
 //
-//  Created by Daniel Alvarez on 9/10/22.
-//
 
 import UIKit
 

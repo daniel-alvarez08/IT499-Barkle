@@ -2,8 +2,6 @@
 //  dnldImgs.swift
 //  Barkle
 //
-//  Created by Roxy P. on 11/3/22.
-//
 
 import Foundation
 import UIKit

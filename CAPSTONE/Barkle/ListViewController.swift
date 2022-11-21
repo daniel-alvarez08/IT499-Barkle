@@ -2,8 +2,6 @@
 //  ListViewController.swift
 //  Barkle
 //
-//  Created by Roxanna P on 11/15/22.
-//
 
 import UIKit
 import SwiftUI

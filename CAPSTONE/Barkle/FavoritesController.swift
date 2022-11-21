@@ -2,8 +2,6 @@
 //  FavoritesController.swift
 //  Barkle
 //
-//  Created by Daniel Alvarez on 10/22/22.
-//
 
 import UIKit
 import SwiftUI

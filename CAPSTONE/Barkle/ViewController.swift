@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  Barkle
 //
-//  Created by Daniel Alvarez on 9/10/22.
-//
 
 import UIKit
 import AVFoundation
@@ -49,7 +47,7 @@ class ViewController: UIViewController {
         
         let currentDog = dogs[dogIndex]
         //dIndex.ar = currentDog
-        ddogz.arrdogs = currentDog
+        //ddogz.arrdogs = currentDog
         
         // creates task to allow calling async
         Task{

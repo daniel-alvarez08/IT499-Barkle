@@ -2,8 +2,6 @@
 //  AccountViewController.swift
 //  Barkle
 //
-//  Created by Daniel Alvarez on 10/9/22.
-//
 
 import UIKit
 

@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  Barkle
 //
-//  Created by Daniel Alvarez on 9/10/22.
-//
 
 import UIKit
 import SwiftUI
@@ -12,7 +10,7 @@ import SwiftUI
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        //Delays launch screen for 3 seconds
+        //Delays launch screen for 3 seconds - might want to disable this
         Thread.sleep(forTimeInterval: 3.0)
         // Override point for customization after application launch.
         return true
