@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E04B0B92-6F5A-4DFE-B1F1-ED11F5B13DF7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10597962-3206-4039-B5E0-1A7364322456"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Barkle/SwiftUIListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "SwiftUIListView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "10597962-3206-4039-B5E0-1A7364322456 - 58601d1c1f041ccb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Barkle.SwiftUIListView.init() -&gt; Barkle.SwiftUIListView"
+                  moduleName = "Barkle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/derekstock/Desktop/Archive%202/Barkle/SwiftUIListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "151">
+               </Location>
+               <Location
+                  uuid = "10597962-3206-4039-B5E0-1A7364322456 - aff368d9dfabcdac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Barkle.SwiftUIListView.init(moc: SwiftUI.Environment&lt;__C.NSManagedObjectContext&gt;, barkleDB: SwiftUI.FetchRequest&lt;Barkle.DogList&gt;, presentationMode: SwiftUI.Environment&lt;SwiftUI.Binding&lt;SwiftUI.PresentationMode&gt;&gt;) -&gt; Barkle.SwiftUIListView"
+                  moduleName = "Barkle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/derekstock/Desktop/Archive%202/Barkle/SwiftUIListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "51">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
